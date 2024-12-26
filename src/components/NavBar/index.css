@@ -1,0 +1,65 @@
+/* Make sure navbar is at the top and spans across the entire width */
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Space out the items */
+  align-items: center; /* Vertically center the content */
+  padding: 10px 20px; /* Padding for spacing */
+  background-color: #032541; /* Background color */
+  position: fixed; /* Keep the navbar fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+/* Style for the logo section */
+.logo-container {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Style for nav items */
+.nav-items-list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+.nav-link:hover {
+  background-color: #0275d8;
+  border-radius: 5px;
+}
+
+/* Adjust the search bar section */
+.search-input {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.btn {
+  margin-left: 10px;
+}
+
+/* Ensure that the page content is not hidden behind the fixed navbar */
+.route-page-body {
+  margin-top: 70px; /* Adjust according to navbar height */
+}

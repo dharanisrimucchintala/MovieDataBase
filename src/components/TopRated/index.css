@@ -1,0 +1,86 @@
+/* TopRated.js - index.css */
+
+/* General Layout */
+.route-page-body {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-color: #f9f9f9;
+}
+
+.top-rated-empty-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.top-rated-empty-view h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.top-rated-empty-view p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Movies List */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 0;
+}
+
+/* MovieCard */
+.movie-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Pagination */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination-container button:hover {
+  background-color: #0056b3;
+}
+
+.pagination-container .page-no {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}

@@ -1,0 +1,78 @@
+/* Center the movie cards in the parent container */
+.movie-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  background-color: #f7f7f7; /* Background color for the card container */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow to make it look better */
+}
+
+/* Styling the movie image with border and rounded corners */
+.movie-card-image {
+  width: 100%;
+  max-width: 200px; /* Set a maximum width for the image */
+  height: auto;
+  border: 3px solid #ddd; /* Border around the image */
+  border-radius: 10px; /* Rounded corners */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow around the image */
+}
+
+/* Center the movie card details and make the text more readable */
+.movie-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.movie-rating {
+  color: #777;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+/* Styling the "View Details" button */
+.btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #218838;
+  cursor: pointer;
+}
+
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #032541;
+  padding: 15px;
+  z-index: 1000;
+}
+
+/* Adding background color and centering the movie cards */
+.route-page-body {
+  margin-top: 100px; /* Adjust for the fixed navbar */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #e9f7f6; /* Background color for the page */
+  padding: 20px;
+}
+
+/* Ensure the pagination controls are centered */
+.mb-3 {
+  display: flex;
+  justify-content: center;
+}
